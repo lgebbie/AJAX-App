@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>NFL Arrests By Team</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="uc16Functions.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h2> Most Arrests by Team</h2>
+        <p>Select an offense to see which team has the most arrests</p>
+        <div>
+
+            <div>
+                <button type="button" class="btn btn-default" onclick="findArrests('DUI')">DUI</button>
+                <button type="button" class="btn btn-default" onclick="findArrests('Assault')">ASSAULT</button>
+                <button type="button" class="btn btn-default navbar-btn" onclick="findArrests('Domestic Violence')">DOMESTIC VIOLENCE</button>
+                <button type="button" class="btn btn-default navbar-btn" onclick="findArrests('Drugs')">DRUGS</button>
+                <button type="button" class="btn btn-default navbar-btn" onclick="findArrests('Disorderly Conduct')">DISORDERLY CONDUCT</button>
+                <button type="button" class="btn btn-default navbar-btn" onclick="findArrests('Gun')">GUN</button>
+                <button type="button" class="btn btn-default navbar-btn"onclick="findArrests('License')">LICENSE</button>
+                <button type="button" class="btn btn-default navbar-btn" onclick="findArrests('Reckless Driving')">RECKLESS DRIVING</button>
+                <button type="button" class="btn btn-default navbar-btn" onclick="findArrests('Alcohol')">ALCOHOL</button>
+                <button type="button" class="btn btn-default navbar-btn" onclick="findArrests('Public Intoxication')">PUBLIC INTOXICATION</button>
+                <button type="button" class="btn btn-default navbar-btn" onclick="findArrests('Resisting Arrest')">RESISTING ARREST</button>
+                <button type="button" class="btn btn-default navbar-btn" onclick="findArrests('Theft')">THEFT</button>
+                <button type="button" class="btn btn-default navbar-btn" onclick="findArrests('Battery')">BATTERY</button>
+                <button type="button" class="btn btn-default navbar-btn" onclick="findArrests('DUI, Drugs')">DUI, DRUGS</button>
+                <button type="button" class="btn btn-default navbar-btn" onclick="findArrests('Sex')">SEX</button>
+                <button type="button" class="btn btn-default navbar-btn" onclick="findArrests('Outstanding Warrant')">OUTSTANDING WARRANT</button>
+                <button type="button" class="btn btn-default navbar-btn" onclick="findArrests('Assault with a Gun')">ASSAULT, GUN</button>
+                <button type="button" class="btn btn-default navbar-btn" onclick="findArrests('Drugs, Gun')">DRUGS, GUN</button>
+                <button type="button" class="btn btn-default navbar-btn" onclick="findArrests('Trespassing')">TRESPASSING</button>
+                <button type="button" class="btn btn-default navbar-btn" onclick="findArrests('Faliure to appear')">FAILURE TO APPEAR</button>
+                <button type="button" class="btn btn-default navbar-btn" onclick="findArrests('Obstruction')">OBSTRUCTION</button>
+            </div>
+            </div>
+        </div>
+        <br/>
+        <div>
+            <br/>
+            <button class='btn btn-success btn-large' onclick="findArrests()">Find Arrests</button></div>
+        <br/>
+        <p/><p/>
+        <div id="output"></div>
+</body>
+
+</html>
